@@ -4,10 +4,17 @@
 	"version": "1.0",
 	"description": "Coding Student Search Bar Add On",
 	"background": {
-		"scripts": [ "background.js", "popup.js" ],
+		"scripts": [
+			"background.js",
+			"popup.js"
+		],
 		"persistent": false
 	},
-	"permissions": [ "https://*.google.com/", "tabs", "declarativeWebRequest", "storage" ],
+	"permissions": [
+		"https://*.google.com/",
+		"tabs",
+		"storage"
+	],
 	"browser_action": {
 		"default_popup": "popup.html",
 		"default_icon": {
