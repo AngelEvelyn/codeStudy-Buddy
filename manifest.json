@@ -1,10 +1,20 @@
 {
-  "manifest_version": 2,
-  "name": "Coding Reasearch Buddy",
-  "version": "1.0",
-  "description": "Coding Student Search Bar Add On",
-  "background": {
-    "scripts": ["main.js"],
-    "persistent": false
-    }
-  }
+	"manifest_version": 2,
+	"name": "Coding Reasearch Buddy",
+	"version": "1.0",
+	"description": "Coding Student Search Bar Add On",
+	"background": {
+		"scripts": [ "background.js", "popup.js" ],
+		"persistent": false
+	},
+	"permissions": [ "https://*.google.com/", "tabs", "declarativeWebRequest", "storage" ],
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "images/icon.png"
+		}
+	},
+	"icons": {
+		"16": "images/icon.png"
+	}
+}
