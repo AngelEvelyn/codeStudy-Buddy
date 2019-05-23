@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="jquery-3.1.1.min.js"></script>
-  </head>
-  <body>
 
-    <div>
-      <p>Input a keyword:</p>
-      <input id="keyword" type="text"></input>
-    </div>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <p>Input a keyword:</p>
+    <form action="" id="form">
+      <input id="keyword" type="text">
+      <input type="submit" value="submit">
+    </form>
+  </div>
+
+  <div class="container">
+    <p>Choose language:</p>
+    <form action="">
+      <select name="" id="language">
+        <option value="javascript">Javascript</option>
+        <option value="python">Python</option>
+        <option value="php">PHP</option>
+        <option value="nodeJS">nodeJS</option>
+      </select>
+    </form>
+  </div>
+
+  <div class="container">
+    <p>Search In: </p>
+    <select name="" id="engine">
+      <option value="google">Google</option>
+      <option value="mdn">MDN</option>
+    </select>
+  </div>
 
 
 
+  <script src="popup.js"></script>
   <script src="background.js"></script>
-    
-  </body>
+
+</body>
+
 </html>
