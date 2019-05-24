@@ -8,33 +8,49 @@
 
 <body>
 
+  <div class="navBar">
+    <img src="images/navIcon.svg" alt="" id="navicon">
+    <h2>Code*search</h2>
+  </div>
+
+  <br>
+
   <div class="container">
     <p>Input a keyword:</p>
     <form action="" id="form">
-      <input id="keyword" type="text">
-      <input type="submit" value="submit">
+      <input id="keyword" type="text" placeholder="insert keyword">
+      <!-- <input type="submit" value="submit"> -->
     </form>
   </div>
 
+  <br>
+
   <div class="container">
     <p>Choose language:</p>
-    <form action="">
+    <div class="selectbox">
       <select name="" id="language">
         <option value="javascript">Javascript</option>
         <option value="python">Python</option>
         <option value="php">PHP</option>
         <option value="nodeJS">nodeJS</option>
       </select>
-    </form>
+    </div>
+
+    <br>
+
+    <p>Search In:</p>
+    <div class="selectbox">
+      <select name="" id="engine">
+        <option value="google">Google</option>
+        <option value="mdn">MDN</option>
+      </select>
+    </div>
   </div>
 
-  <div class="container">
-    <p>Search In: </p>
-    <select name="" id="engine">
-      <option value="google">Google</option>
-      <option value="mdn">MDN</option>
-    </select>
-  </div>
+  <br>
+
+  <input type="submit">
+
 
 
 

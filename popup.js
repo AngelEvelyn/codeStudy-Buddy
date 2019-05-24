@@ -30,8 +30,6 @@ getSettings();
 
 form.addEventListener('submit', function (event) {
 
-
-
 	const form = document.getElementById('form');
 	const keyword = document.getElementById('keyword').value;
 	language = document.getElementById('language').value
@@ -53,4 +51,14 @@ form.addEventListener('submit', function (event) {
 	saveSettings(language, engine)
 	event.preventDefault();
 	chrome.tabs.create({ url: newURL });
-});
+})
+
+document.getElementById("engine").onchange = function () {
+	engine = document.getElementById('engine').value
+	saveSettings(language, engine)
+};
+
+document.getElementById("language").onchange = function () {
+	language = document.getElementById('language').value
+	saveSettings(language, engine)
+};
