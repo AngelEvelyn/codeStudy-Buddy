@@ -10,6 +10,7 @@
 
 let language;
 let engine;
+const form = document.getElementById('form');
 
 function saveSettings(lang, eng) {
 	chrome.storage.sync.set({ 'language': lang, 'eng': eng })
@@ -30,7 +31,6 @@ getSettings();
 
 form.addEventListener('submit', function (event) {
 
-	const form = document.getElementById('form');
 	const keyword = document.getElementById('keyword').value;
 	language = document.getElementById('language').value
 	engine = document.getElementById('engine').value

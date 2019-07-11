@@ -77,9 +77,10 @@ input[type=submit] {
 
 .navBar {
   display: flex;
+  justify-content: center;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5f6166), color-stop(100%,#00060a));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 80%;
-  margin: 0px auto;
+  width: 100%;
+  margin: auto;
 }
